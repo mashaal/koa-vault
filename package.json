@@ -1,0 +1,42 @@
+{
+  "name": "koa-vault",
+  "version": "1.0.0",
+  "description": "Archive Koa responses, for historical purposes.",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "koa","archive", "offline", "vault", "snapshot", "json", "rest"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.6"
+  },
+  "repository": "github:mashaal/koa-vault",
+  "bugs": "https://github.com/mashaal/koa-vault/issues",
+  "homepage":"https://github.com/mashaal/koa-vault",
+  "author": "mashaal",
+  "license": "MIT",
+  "peerDependencies": {
+    "koa": "^2.0.0"
+  },
+  "scripts": {
+    "test": "npm run test:eslint && npm run test:prettier",
+    "test:eslint": "eslint .",
+    "test:prettier": "prettier '**/*.{json,yml,md}' -l",
+    "prepublishOnly": "npm test"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-env": "^9.0.0",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import-order-alphabetical": "^0.0.2",
+    "eslint-plugin-jsdoc": "^15.9.1",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2"
+  }
+}
